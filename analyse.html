@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta data for sosiale medier deling -->
+    <meta property="og:image" content="images/webp_images/analyse.webp">
+    <meta property="og:url" content="https://itstud.hiof.no/~fredrik/deleksamen4/analyse.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Analyse">
+    <meta property="og:description" content="Analyse av min nettside. Hva som er bra og hva som kan bli bedre.">
+    <!-- slutt på deling sosiela medier -->
+
+
+    <!-- Twitter sosialt medie integrasjon -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@fredrik_kr">
+    <meta name="twitter:title" content="Analyse">
+    <meta name="twitter:description" content="Analyse av min nettside. Hva som er bra og hva som kan bli bedre.">
+    <meta name="twitter:image" content="images/webp_images/analyse.webp">
+    <meta name="twitter:image:alt" content="Bilde for analyse på deleksamen 4">
+    <!-- SLutt på twitter -->
+
+
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="font/css/fontawesome.css" rel="stylesheet">
+    <link href="font/css/brands.css" rel="stylesheet">
+    <link href="font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Analyse</title>
+    <link rel="icon" type="images/x-icon" href="images/favicon.ico">
+    <!-- fav icon er designet selv på: https://www.favicon.cc/ -->
+
+    <!-- Dele-knapper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Slutt på dele knapper -->
+
+    <!-- Metadata -->
+    <meta name="description"
+        content="Innholdside som tar for seg en analyse av hele nettsiden. Verktøy som webaim og lighthouse er brukt for å finne potensielle forbedringer til nettsiden.">
+    <!-- Slutt på metadata -->
+</head>
+
+<body>
+    <div id="innhold-side-container">
+        <header>
+            <nav>
+                <a href="index.html" id="logo-header-navbar">
+                    <img src="./images/webp_images/baseball_logo.webp" alt="Logo for my webpage">
+                </a>
+                <!-- alt av javascript er brukt til hamburgermeny, og er hentet fra forelesning. -->
+                <a style="color: white;" href="javascript:void(0)" id="ham-icon" onclick="hamMenu()"><i
+                        class="fa-solid fa-water"></i>
+                    Meny</a>
+                <ul id="meny" style="display:block">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="uu_vs_ceo.html">UU vs SEO</a></li>
+                    <li><a href="cms.html">CMS</a></li>
+                    <li><a class="current-site" href="analyse.html">Analyse</a></li>
+                    <li><a href="kontakt_oss.html">Kontakt oss</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- Main seksjonen i innholdssidene inneholder bilde, overskrift og artikkel-tekst. -->
+        <main id="focus-article-container">
+            <div id="margin-knapp">
+                <a href="tilgjengelighet_tabell.html" id="tabell-side">Gå til tabell for tilgjengelighetserklæring</a>
+            </div>
+            <!-- Her har vi seksjon med innhold som skal være på siden. -->
+            <section class="article-content">
+                <img src="images/webp_images/analyse.webp" alt="Analyse">
+                <h1>Analyse av min nettside</h1>
+
+                <h2>SEO</h2>
+                <p>
+                    På nettsiden min, så har jeg en titel-tag til hver av sidene mine. På innholdsidene og index-siden,
+                    så er tittel-tag det samme som meny-punktene. Istedenfor å ha titel-tag lik som menypunkter så, kan
+                    jeg heller skrive litt mer for å gi en mer beskrivende titel, men bør ikke overstige mer enn et par
+                    ord. Som et tiltak på dette gjorde jeg kun endring på title-tag for index-siden. Jeg så på hvordan
+                    nettavisen VG hadde det på sin side, og ble inspirert. Ved å gjøre dette tiltaket, så får jeg en mer
+                    forklarende tekst til min nettside i google, men også bedre score hos goolgle.
+                </p>
+                <p><a href="https://www.vg.no/">Link til VG</a></p>
+                <p>
+                    Jeg har "velkommen til min nettside" på hovedsiden. Jeg bør vurdere å endre på teksten til noe som
+                    er
+                    mer forklarende og mer intressant. Som tiltak har jeg endret på teksten til "Deleksamen 4".
+                </p>
+                <p>
+                    De største nøkkelordene for nettsiden tror jeg er UU og SEO. For å få bra SEO, så må nøkkelord
+                    bli
+                    brukt, men ikke for mye. Jeg har ikke brukt nøkkelord uten hensikt for å påvirke SEO. Jeg gjør ingen
+                    tiltak ved dette på nettsiden.
+                </p>
+                <p>
+                    Når det gjelder tilgjengelighet og linking på nettsiden min, så har jeg gjort en god jobb med
+                    utgående linker. Da snakker jeg om alle linker som er kilder til hvor jeg har lest meg opp om
+                    emnene. For å forbedre tilgjengeligheten internt på nettsiden min, så kan jeg benytte meg av for
+                    eksempel breadcrumps-sti. Dette vil resultere i en oversiktelig og god tilgjengelighet. Som tiltak
+                    så gjorde jeg linker og navigasjon mer oversiktlig. Bedre navn på linker og tydligere animasjoner
+                    var endringer jeg gjorde. Jeg laget ingen breadcrumps sti. Jeg fikk grønn score i lighthouse ved å
+                    legge til metadata-description og vurderte det som bra SEO.
+                </p>
+                <p>Jeg har ikke benyttet meg av mye metadata i nettsiden, jeg hadde kun metadata for artikkel på UU vs
+                    SEO siden. Som tiltak har jeg lagt til metadata på CMS siden og kontakt oss siden også. Jeg har
+                    fulgt schema.org for hvordan jeg skal implementere metadata.</p>
+
+                <h2>UU</h2>
+                <p>
+                    På
+                    footer, så har jeg en ganske stygg "dotted" linje som skiller footer fra main området. Dette er
+                    noe
+                    jeg syntes var kult å legge til da jeg gjorde det, men nå har jeg ikke det samme synet på det.
+                    Denne
+                    linjen kan være med på å gjøre universell utforming utfordrende med tanke på at den kan være med
+                    på
+                    å ta bort oppmerksomhet fra annet innhold på nettsiden som er mye viktigere. Som tiltak så har jeg
+                    dempet dotted-line effekten.
+                </p>
+                <p>
+                    Jeg har brukt veldig mye border-radius på nettsiden min. Runde kanter er noe man ser igjen i mange
+                    nettsider. Svært få personer liker å se firkanta bokser med spisse kanter rundt omkring på nettsiden
+                    sin. Etter min mening, så har jeg ikke brukt border-radius for mye. Jeg syntes at jeg har klart å
+                    holde en balanse der jeg har hatt det gøy med denne detaljen i design-prosessen og samtidig at
+                    nettsiden beholder en fin struktur.
+
+                    I henhold til UU, så er dette greit, så lenge nettsiden beholder en ryddig struktur og ikke er med
+                    på å ta vekk oppmerksomheten i den grad at det blir forstyrrende for brukeren. Jeg har ikke gjort
+                    noen endringer med bruken min av borderradius.
+                </p>
+                <p>
+                    Slik jeg lagde navigasjon-menyen på nettsiden, så er
+                    den eneste animasjonen når jeg holder musepeker over meny-punkter at fargen gradvis endres til
+                    en mørkere blå-farge. Dette samkjører ikke så godt med tanke på UU. Det er krav om at når
+                    informasjon formidles ved hjelp av farge, skal den i tillegg presenteres på en annen måte. Et tiltak
+                    jeg kan gjøre er å legge til enda en animasjon som gjør det lettere å se at dette er et klikkbart
+                    menypunkt. Noe som er viktig å tenke på her er at animasjoner ikke skal forårsake eplepsi. Et lite
+                    tiltak jeg har gjort er at jeg har gjort farge-animasjonen gnaske "treg". Det tar litt tid før
+                    fargen har endrer seg ved "hoover" effekten.
+                    Som tiltak for å presentere informasjonen bedre så har jeg lagt til underline-effekt på linker i
+                    navigasjons-menyen. Jeg endte også med å endre mye farger i nav-meny som ikke forårsaker dårlige
+                    fargekontraster.
+                </p>
+                <p><a href="https://www.uutilsynet.no/wcag-standarden/231-terskelverdi-pa-maksimalt-tre-glimt-niva/102">Krav
+                        om terskelverdi på maksimalt tre glimt har jeg lest om her:</a></p>
+
+                <p><a href="https://www.uutilsynet.no/wcag-standarden/141-bruk-av-farge-niva/93">Krav om bruk av
+                        farge
+                        har jeg lest om her:</a></p>
+
+                <p>
+                    Et krav innen UU for ikt er at brukeren skal ha minst to metoder til å finne innholdet på
+                    nettstedet. Derfor har jeg i tilegg til navigasjons-menyen brukt index-siden til å linke
+                    opp til de forskjellige sidene. Slik at brukere har to metoder for å navigere seg til de
+                    forskjellige sidene.
+                </p>
+                <p><a href="https://www.uutilsynet.no/veiledning/navigasjonsmetoder/217">Kravet om minst to metoder
+                        for
+                        å finne innhold har jeg lest om her:</a></p>
+
+                <p>
+                    Når det gjelder artikel-layouten på nettsiden kan gi alle knappene på siden enda
+                    en animasjon og mer forklarende tekst på linker. Dette vil gjøre navigsjonen i artikkelboksene enda
+                    mer oversiktelig. Som tiltak, så har jeg gjort disse endringene på linker og knapper på alle
+                    artikkelboksene. Det er nå lettere å vite hvor linker tar deg, og lettere å vite hva som er en link
+                    og ikke.
+                </p>
+                <p>
+
+                    Jeg har laget tabeller for nettsiden. De fungerer like godt på desktop som på
+                    mobil. Fargevalg er jeg fornøyd med. Det er lett å se hva som tilhører hva med tanke
+                    på fargene. Tabellene inneholder ikke for mye informasjon slik at de blir rotete. Jeg
+                    har holdt tabellene enkle. UU er tilfredstilt ved at tabellene er responsive og tilpasses den
+                    skjermen de er på.
+                    Jeg har likevel gjort noen små tiltak. Jeg har gjort minimale endringer i farger
+                    på den ene tabellen. Denne endringen bidrar til en bedre helhet og færre farger. En annen endring
+                    jeg har gjort er å sentrere teksten i den ene tabellen slik at tabellene er mer lik. Jeg har
+                    også lagt til en forklarende overskrift over begge tabellene mine, dette er for å gi bedre
+                    informasjon om hva tabellene inneholder.
+                </p>
+                <p><a href="https://www.uutilsynet.no/veiledning/tabeller/225#tabelltittel_caption">Kravet om
+                        tabeller
+                        og UU har jeg lest om her:</a></p>
+                <p>
+
+                    Når det gjelder den generelle responsiviteten på alle sidene i nettsiden min, så har jeg laget
+                    et brytepunkt som er globalt for hele nettsiden. Brytepunktet er med på å gjøre
+                    nettsiden min tilpasset mobil og desktop. Hamburgerbaren blir
+                    tilgjengelig ved nedskaleringen, og gir en bedre brukervennelighet ved mobil. Dette er kjempebra
+                    for UU, og tilfredstiller krav om interasjon ved mobile løsninger. Ved hamburgerbar så, sørger jeg
+                    for at navigasjon bruker liten del av skjermen.
+                    Jeg har også laget flere små brytepunkter som er med på å gjøre nettsiden responsiv. Et av disse
+                    brytepunktene minsker font-size i "h1"-tagg på index-siden. Et annet endrer plassering på bildene i
+                    innholdsidene. Jeg har også laget et brytepunkt som minsker "li" elementene for bedre tilpassing til
+                    mobil.
+                </p>
+                <p>
+                    <a href="https://www.uutilsynet.no/veiledning/mobile-losninger/216#utforming">Krav om UU og
+                        ineraksjoner:
+                    </a>
+                </p>
+
+
+                <h2>Heuristisk evaluering</h2>
+                <p>Det er flere punkter jeg kan ta i betraktning når det gjelder heuristisk evaluering, men jeg har
+                    valgt dem som er mest relevant for min nettside.
+                </p>
+                <p>
+                    Når vi ser på sammenhengen mellom nettsiden og brukerene, så er det viktig og vite hvem
+                    nettsiden
+                    er rettet mot. Denne siden er rettet mot it-intresserte, så det er derfor mange begreper jeg
+                    ikke
+                    definerer fordi jeg regner med at alle it-intresserte forstår disse begrepene.
+                    Strukturen på nettsiden kan alle kjenne seg igjen i, men innholdet er
+                    rettet mot it-intresserte.
+                </p>
+                <p>
+                    Brukerkontroll og frihet er et krav som er viktig for mange brukere. Siden nettsiden min ikke er
+                    så
+                    stor, så er det ganske lett å føle seg i kontroll. Nettsiden min inneholder ikke så mye
+                    funksjonalitet, og får bruker til å føle seg i kontroll.
+                    Men som en forbedring, så har jeg gjort
+                    navigasjonen mer tydelig. Tekst i linker på index-side er nå mer forklarende. Jeg har lagt til blå
+                    farge på hamburger-menyen, på den siden som bruker befinner seg på. Disse tiltakene er med på å
+                    gjøre brukerkontroll lettere. Jeg har også fikset en feil der hamburger-icon blir skyvet ut av
+                    nettsiden.
+                    Innholdet på nettsiden tok for mye plass og gjorde at brukerkontroll ble utfordrende ved bruk av
+                    nettsiden på mobil. Jeg fikset problemet ved å sette et brytepunkt som
+                    minsker alle "li"-elementer.
+                </p>
+                <p>Med standard og konsistent, er det flere elementer å vurdere. Et viktig punkt er at brukere
+                    kjenner
+                    seg
+                    igjen i de forskjellige elementene slik at de ikke trenger å lære seg noe nytt når de skal bruke
+                    min
+                    nettside. Ved å gjøre punkter i hamburger-menyen blå på den siden som bruker befinner seg på gjør at
+                    det er lettere for bruker å kjenne seg igjen i funksjonaliteten som hamburger-menyen har. Jeg har
+                    også lagt til "alt" tekst ved alle bilder og elementer som tydelig trenger det for å skape god
+                    kjenskap til alle elementer i nettsiden.
+                </p>
+                <p>Estetisk og minimalistisk design er kanskje ikke ivaretatt i den grad som er ønskelig. På denne
+                    nettsiden har jeg fokusert på å benytte meg av mange funksjoner og "unødvendig
+                    design" for å bli kjent med hvordan html og css fungerer.
+
+                    Designet på forskjellige elementer i nettsiden burde ha flere likheter ved hverandre for å skape en
+                    større likhet i hele nettsiden. Mye "pynt" kan ta vekk oppmerksomheten fra
+                    innholdet. Som tiltak på dette punktet, så har jeg dempet "dottet line" effekt i footer, så effekten
+                    ikke tar vekk fokus. Jeg har gjort design mer likt på elementer. Jeg gjorde tabellene mine enda mer
+                    like i designet.
+                <p>
+                    <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">Link til hvor jeg har lest
+                        meg
+                        opp om heuristisk evaluering:
+                    </a>
+                </p>
+
+
+                <!-- LIGHT HOUS OG WEBAIM UNDER -->
+                <!-- Analyse-verktøy er bare gjort i Google chrome -->
+
+
+                <h2>Analyse - Ulike verktøy</h2>
+                <h3>Lighthouse</h3>
+                <p>
+                    Skjermbilder av index-side, UU/SEO-side, CMS-side og kontakt-side. Disse bildene er tatt før det er
+                    gjort endringer.
+                </p>
+                <div class="flex-screenshots">
+                    <img class="screenshot-image" src="images/screenshot-index.png"
+                        alt="Screenshot lighthouse index.html">
+                    <img class="screenshot-image" src="images/screenshot-UU-SEO-desktop.png"
+                        alt="Screenshot lighthouse UU vs SEO.html">
+                    <img class="screenshot-image" src="images/screenshot-cms.png" alt="Screenshot lighthouse cms.html">
+                    <img class="screenshot-image" src="images/screenshot-kontakt-oss-desktop.png"
+                        alt="Screenshot lighthouse kontakt_osss.html">
+
+                </div>
+                <h4>Performance:</h4>
+                <p>
+                    Det er flere grunner til at jeg får dårlig score. Iht performance på nettsiden, så er en grunn
+                    at
+                    flere elementer på nettsiden mine tar lang tid å laste inn. Grunnen er at jeg har brukt
+                    bildeformater som tar stor plass. Jeg får tilbakemelding om at jeg kan styre unna dette ved å
+                    gjøre
+                    bildene mer responsive. Jeg har fire forskjellige errorer som kan løses ved å komprimere
+                    elementer
+                    som tar lang tid å laste inn.
+                </p>
+                <h4>Accessibility:</h4>
+                <p>
+                    På accessibility, så får jeg tilbakemelding på at jeg ikke har gode nok fargekontraster på
+                    nettsiden. Dette gjelder bare i footer. Jeg får også en reaksjon på at hamburger-icon og
+                    share-knapper ikke har en alternativ tekst ved seg. overskriftene mine er heller ikke i
+                    ordentlig
+                    rekkefølge i henhold til tilgjengelighet. googlemaps elementet mitt mangler også en titel.
+                </p>
+                <h4>Best practices:</h4>
+                <p>
+                    Under denne kategorien får jeg denne error-meldingen: "Issues were logged in the Issues
+                    panel in Chrome Devtools". Det står også at det kan ha noe med normalize.css å gjøre.
+                    På kontakt-oss siden min, så får jeg en error som gir meg denne meldingen: Uses deprecated APIs.
+                </p>
+                <h4>SEO:</h4>
+                <p>
+                    Jeg får beskjed om at metadata mangler på nettsiden. Når det gjelder tilgjengelighet og
+                    crawlere, så
+                    har jeg en error når det gjelder hamburger-menyen.
+                </p>
+
+                <h3>Webaim</h3>
+
+                <p>Skjermbilder av error og advarsler fra webaim-analysen. Disse bildene er tatt før det er gjort
+                    endringer.</p>
+                <div class="flex-screenshots">
+                    <img class="screenshot-image" src="images/screenshot-webaim-footer.png"
+                        alt="Screenshot webaim errors">
+                    <img class="screenshot-image" src="images/screenshot-webaim-logo.png" alt="Screenshot webaim logo">
+                    <img class="screenshot-image" src="images/screenshot-webaim-h.png" alt="Screenshot webaim headers">
+                    <img class="screenshot-image" src="images/screenshot-kontakt-webaim.png"
+                        alt="Screenshot webaim buttons">
+                </div>
+                <p>Errorene jeg fikk i webaim var handlet bare om fargekontraster i footer. Dette gjaldt index-siden
+                    og
+                    alle innholdssidene.
+                </p>
+                <p>
+                    Jeg fikk noen advarsler når jeg analyserte, og disse advarslene gjentar seg flere steder i
+                    nettsiden. En av dem
+                    var at det er to linker
+                    som fører deg til samme sted. En annen advarsel er at jeg har gradert overskriftene
+                    feil. For eksempel, så har jeg droppet "h2-tagg", men brukt "h1" og "h3 taggen. På den ene
+                    innholdssiden, så har jeg linket til en powerpoint-fil, og istedenfor å lage en fungerende link,
+                    så
+                    har jeg
+                    bare skrevet en refferanselinje med underline effekt. Dette gir meg en advarsel. Den
+                    siste advarselen er på logoen. Webaim reagerer på skriften som befinner seg inni logoen.
+                </p>
+
+
+
+                <h3 id="table-header">Tabell for error, tiltak og utfall for UU, SEO og heuristisk evaluering:</h3>
+
+                <!-- Tabell -->
+                <div id="table-container-cms">
+                    <div class="table-area-blank-cms"></div>
+
+                    <div class="table-area-fordeler-cms">
+                        <h3>Error / advarsel</h3>
+                    </div>
+
+                    <div class="table-area-ulemper-cms">
+                        <h3>Tiltak</h3>
+                    </div>
+
+                    <div class="table-area-likheter-ulikheter-cms">
+                        <h3>Utfall
+                        </h3>
+
+                    </div>
+
+
+                    <!-- UU -->
+                    <div class="table-area-cms1">
+                        <h3>UU</h3>
+                    </div>
+
+                    <div class="table-area-cms1-fordeler">
+                        <ul>
+                            <li>
+                                Elementer tar lang tid å laste inn.
+                            </li>
+                            <li>Dårlige fargekontraster i footer og meny.</li>
+                            <li>Skriften som befinner seg inni logo er utydelig.
+                            </li>
+                            <li>Lite forklarende tekst på flere linker.</li>
+                            <li>Jeg har kun en animasjon på flere knapper.</li>
+
+
+
+                        </ul>
+                    </div>
+
+                    <div class="table-area-cms1-ulemper">
+                        <ul>
+                            <li>Gjør alle bilder om til webp format.</li>
+                            <li>Gjør tekst-fargen i footer om til hvit og bytter farger i nav-bar så det blir bedre
+                                fargekontraster.</li>
+                            <li>Bytter bakgrundsbilde på index-side.</li>
+                            <li>Legger til enda en "hover" animasjon på knapper.</li>
+                            <li>Lagt til tekst ved hamburger-icon.</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="table-area-cms1-likheter-ulikheter">
+                        <ul>
+                            <li>Nettsiden tar kortere tid å laste inn.</li>
+                            <li>Lettere for brukere med funksjonshemmning å bruke nettsiden. </li>
+                            <li>Bedre oversikt over innhold.</li>
+                            <li>Tydligere navigasjon.</li>
+                            <li>Ingen elementer er vanskelig å tyde pga dårlige fargekontraster.</li>
+                        </ul>
+                    </div>
+
+
+                    <!-- SEO -->
+                    <div class="table-area-cms2">
+                        <h3>SEO</h3>
+                    </div>
+
+                    <div class="table-area-cms2-fordeler">
+                        <ul>
+
+                            <li>To linker fører til samme sted.</li>
+                            <li>Feil gradering av overskrifter på nettsiden.</li>
+                            <li>Mangler "alt" tekst til elementer.</li>
+                            <li>Mangler metadata.</li>
+                            <li>Dårlig tilgjengelighet for crawlere.</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="table-area-cms2-ulemper">
+                        <ul>
+                            <li>Lagt til "alt" tekst på alle elementer som mangler det.</li>
+                            <li>skrevet bedre title-tagg på nettsiden.</li>
+                            <li>Lagt til meta-tagg med description i "head" på alle sider.</li>
+                            <li>Stokket om på "h" taggene for å gi riktig gradering av overskrifter.</li>
+                            <li>Legger til metadata på sidene.</li>
+                        </ul>
+                    </div>
+
+                    <div class="table-area-cms2-likheter-ulikheter">
+                        <ul>
+                            <li>SEO samarbeider bedre med UU.</li>
+                            <li>Google kan benytte verktøy som bruker metadata for nettsiden.</li>
+                            <li>Google kan lettere å se struktur og gradering av nettsiden.</li>
+                            <li>Bedre søke-score i Google</li>
+                            <li>Mer oversiktelig når du ser nettsiden i google.</li>
+                        </ul>
+                    </div>
+
+
+
+                    <!-- Heuristisk evaluering -->
+                    <div class="table-area-cms3">
+                        <h3>Heuristisk evaluering</h3>
+                    </div>
+
+                    <div class="table-area-cms3-fordeler">
+                        <ul>
+                            <li>Elementer bør ha fler likheter ved hverandre for å skape en større
+                                helhet i nettsiden.</li>
+                            <li>Noen begreper er ikke definert bra.
+                            </li>
+                            <li>Mangler "alt" tekst ved noen elementer.</li>
+                            <li>Mye ekstra design som kan ta fokus vekk fra bruker.</li>
+                            <li>Utydelige linker.</li>
+                        </ul>
+                    </div>
+
+                    <div class="table-area-cms3-ulemper">
+                        <ul>
+                            <li>Lagt til "alt" tekst på alle elementer som mangler det.</li>
+                            <li>Dempet "dottet line" effekt i footer.</li>
+                            <li>Gjort endringer, så design på tabeller er mer lik hverandre</li>
+                            <li>Lagt til "underline" effekt på linker.</li>
+                            <li>Skrevet om tekst i linker, så det gir bruker bedre informasjon om hvor linken går.</li>
+                        </ul>
+                    </div>
+
+                    <div class="table-area-cms3-likheter-ulikheter">
+                        <ul>
+                            <li>Dropper forklaring av begreper, siden nettsiden er rettet mot it-intresserte.</li>
+                            <li>Lettere å vite hvor linker fører bruker.</li>
+                            <li>Bedre helhetlig design i nettsiden.</li>
+                            <li>Mindre unødvendig design som kan ta fokus vekk fra innhold.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </section>
+        </main>
+
+
+        <footer>
+            <div>
+                <div id="footer-kontakt-info">
+                    <h3>Min kontaktinformasjon:</h3>
+                    <p>Navn: Fredrik Kristiansen</p>
+                    <p>Mail: fjkri@hotmail.com</p>
+                    <p>Telefon: +47 976 67 967</p>
+                </div>
+                <div id="ringe-tider">
+                    <p>Våre ringetider er:</p>
+                    <p>08:00 - 15:00, Mandag - Fredag</p>
+                </div>
+
+                <!-- Facebook knapp -->
+                <div class="fb-share-button" data-href="https://www.your-domain.com/your-page.html"
+                    data-layout="button_count">
+                </div>
+                <!-- SLutt på facebook knapp -->
+                <a href="#" class="fa fa-twitter"> Twitter</a>
+                <a href="#" class="fa fa-pinterest"> Pinterest</a>
+            </div>
+        </footer>
+        <script src="javascript/ham.js"></script>
+    </div>
+    <!-- Facebook share knapp -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0"
+        nonce="L8aR15TL"></script>
+    <!-- Slutt på facebook share knapp -->
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta data for sosiale medier deling -->
+    <meta property="og:image" content="images/webp_images/books.webp">
+    <meta property="og:url" content="https://itstud.hiof.no/~fredrik/deleksamen4/kontakt_oss.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Kontaktinformasjon for Høyskolen i Østfold">
+    <meta property="og:description" content="Alt av kontaktinformasjon du trenger!">
+    <!-- slutt på deling sosiela medier -->
+
+    <!-- Twitter sosialt medie integrasjon -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@fredrik_kr">
+    <meta name="twitter:title" content="Kontaktinformasjon for Høyskolen i Østfold">
+    <meta name="twitter:description" content="Alt av kontaktinformasjon du trenger!">
+    <meta name="twitter:image" content="images/webp_images/books.webp">
+    <meta name="twitter:image:alt" content="Bilde for kontaktside på deleksamen 4">
+    <!-- Legge til url -->
+
+    <!-- SLutt på twitter -->
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="font/css/fontawesome.css" rel="stylesheet">
+    <link href="font/css/brands.css" rel="stylesheet">
+    <link href="font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Kontakt oss</title>
+    <link rel="icon" type="images/x-icon" href="images/favicon.ico">
+    <!-- fav icon er designet selv på: https://www.favicon.cc/ -->
+
+    <!-- Dele-knapper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Slutt på dele knapper -->
+
+    <!-- Metadata -->
+    <meta name="description"
+        content="Høyskolen i Østfold sin kontaktinformasjon. Adresse, telefon og kart finnes på denne siden.">
+    <!-- Slutt på metadata -->
+</head>
+
+<body>
+    <div id="innhold-side-container">
+        <header>
+            <nav>
+                <a href="index.html" id="logo-header-navbar">
+                    <img src="./images/webp_images/baseball_logo.webp" alt="Logo for my webpage">
+                </a>
+                <!-- alt av javascript er brukt til hamburgermeny, og er hentet fra forelesning. -->
+                <a style="color: white;" href="javascript:void(0)" id="ham-icon" onclick="hamMenu()"><i
+                        class="fa-solid fa-water"></i>
+                    Meny</a>
+                <ul id="meny" style="display:block">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="uu_vs_ceo.html">UU vs SEO</a></li>
+                    <li><a href="cms.html">CMS</a></li>
+                    <li><a href="analyse.html">Analyse</a></li>
+                    <li><a class="current-site" href=" kontakt_oss.html">Kontakt oss</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- Main seksjonen -->
+        <main itemscope itemtype="https://schema.org/ContactPage" id="focus-article-container-kontakt">
+            <!-- Her har vi seksjon med innhold som skal være på siden. -->
+            <section class="article-content">
+                <img itemprop="primaryImageOfPage" src="images/webp_images/books.webp" alt="Kontakt oss">
+                <h1 itemprop="headline">Høyskolen i Østfold</h1>
+                <div class="flex-kart-kontakt">
+                    <div itemprop="mainContentOfPage" class="table-div">
+                        <h2>Telefon, mail og faks</h2>
+                        <table>
+                            <tr>
+                                <td><i class="fa-solid fa-envelope"></i> Mail:</td>
+                                <td>postmottak@hiof.no</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-phone"></i> Telefon:</td>
+                                <td>69 60 80 00</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-fax"></i> Faks:</td>
+                                <td>69 60 80 01</td>
+                            </tr>
+                        </table>
+                        <h3>Postadresse</h3>
+                        <table>
+                            <tr>
+                                <td><i class="fa-solid fa-file-signature"></i> Navn:</td>
+                                <td>Høyskolen i Østfold</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-location-dot"></i> Adresse:</td>
+                                <td>B R A veien 4</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-signs-post"></i> Postnummer:</td>
+                                <td>1757 Halden</td>
+                            </tr>
+                        </table>
+                        <h3>Organisasjon- og fakturainformasjon</h3>
+                        <table>
+                            <tr>
+                                <td><i class="fa-solid fa-money-check"></i> Organisasjonsnummer:</td>
+                                <td>971 567 376</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-building"></i> Bedriftsnummer:</td>
+                                <td>973 967 592</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Kontakt skjema -->
+                    <div id="send-in-sporsmal">
+                        <form>
+
+                            <label for="name"><i class="fa-solid fa-file-signature"></i> Navn: *</label>
+                            <input type="text" name="name" id="name" required>
+
+                            <label for="email"><i class="fa-regular fa-envelope"></i> Email: *</label>
+                            <input type="email" name="email" id="email" required>
+
+                            <label for="age"><i class="fa-solid fa-person-walking-with-cane"></i> Alder: </label>
+                            <input type="number" name="age" id="age">
+
+                            <label for="description"><i class="fa-solid fa-circle-question"></i> Hva lurer du
+                                på: *</label>
+                            <textarea id="description" name="description" required></textarea>
+
+                            <button type="submit">Send inn</button>
+                        </form>
+                    </div>
+                    <!-- Slutt på kontakt skjema -->
+
+                    <iframe class="google-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1884406377942!2d11.350614616101142!3d59.12924748158932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f72dd0f16b%3A0x54daade2c0319210!2sH%C3%B8gskolen%20i%20%C3%98stfold%20-%20Halden!5e0!3m2!1sno!2sno!4v1668630674229!5m2!1sno!2sno"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <!-- For å legge til kart så fulgte jeg linken nedenfor. -->
+                    <!-- https://wcmshelp.ucsc.edu/advanced/embedding-google/google-maps.html -->
+                </div>
+            </section>
+        </main>
+
+
+        <footer>
+            <div>
+                <div id="footer-kontakt-info">
+                    <h3>Min kontaktinformasjon:</h3>
+                    <p>Navn: Fredrik Kristiansen</p>
+                    <p>Mail: fjkri@hotmail.com</p>
+                    <p>Telefon: +47 976 67 967</p>
+                </div>
+                <div id="ringe-tider">
+                    <p>Våre ringetider er:</p>
+                    <p>08:00 - 15:00, Mandag - Fredag</p>
+                </div>
+
+                <!-- Facebook knapp -->
+                <div class="fb-share-button" data-href="https://www.your-domain.com/your-page.html"
+                    data-layout="button_count">
+                </div>
+                <!-- SLutt på facebook knapp -->
+                <a href="#" class="fa fa-twitter"> Twitter</a>
+                <a href="#" class="fa fa-pinterest"> Pinterest</a>
+            </div>
+        </footer>
+
+
+        <script src="javascript/ham.js"></script>
+    </div>
+    <!-- Facebook share knapp -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0"
+        nonce="L8aR15TL"></script>
+    <!-- Slutt på facebook share knapp -->
+</body>
+
+
+</html>

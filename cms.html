@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta data for sosiale medier deling -->
+    <meta property="og:image" content="images/webp_images/cms.webp">
+    <meta property="og:url" content="https://itstud.hiof.no/~fredrik/deleksamen4/cms.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="CMS">
+    <meta property="og:description" content="Artikkel og tabell om CMS.">
+    <!-- slutt på deling sosiela medier -->
+
+
+    <!-- Twitter sosialt medie integrasjon -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@fredrik_kr">
+    <meta name="twitter:title" content="CMS">
+    <meta name="twitter:description" content="Artikkel og tabell om CMS.">
+    <meta name="twitter:image" content="images/webp_images/cms.webp">
+    <meta name="twitter:image:alt" content="Bilde for CMS på deleksamen 4">
+    <!-- SLutt på twitter -->
+
+
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="font/css/fontawesome.css" rel="stylesheet">
+    <link href="font/css/brands.css" rel="stylesheet">
+    <link href="font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>CMS</title>
+    <link rel="icon" type="images/x-icon" href="images/favicon.ico">
+    <!-- fav icon er designet selv på: https://www.favicon.cc/ -->
+
+    <!-- Dele-knapper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Slutt på dele knapper -->
+
+    <!-- Metadata -->
+    <meta name="description"
+        content="Artikkel om CMS og ulike CMS systemer som finnes. Tabell og forskjeller og likheter som gir en god illustration.">
+    <!-- Slutt på metadata -->
+</head>
+
+<body>
+    <div id="innhold-side-container">
+        <header>
+            <nav>
+                <a href="index.html" id="logo-header-navbar">
+                    <img src="./images/webp_images/baseball_logo.webp" alt="Logo for my webpage">
+                </a>
+                <!-- alt av javascript er brukt til hamburgermeny, og er hentet fra forelesning. -->
+                <a style="color: white;" href="javascript:void(0)" id="ham-icon" onclick="hamMenu()"><i
+                        class="fa-solid fa-water"></i>
+                    Meny</a>
+                <ul id="meny" style="display:block">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="uu_vs_ceo.html">UU vs SEO</a></li>
+                    <li><a class="current-site" href="cms.html">CMS</a></li>
+                    <li><a href="analyse.html">Analyse</a></li>
+                    <li><a href="kontakt_oss.html">Kontakt oss</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- Main seksjonen i innholdssidene inneholder bilde, overskrift og artikkel-tekst. -->
+        <main itemscope itemtype="https://schema.org/Article" id="focus-article-container">
+            <!-- Her har vi seksjon med innhold som skal være på siden. -->
+            <section class="article-content">
+                <img itemprop="image" src="images/webp_images/cms.webp" alt="CMS">
+                <h1 itemprop="name">CMS</h1>
+                <h2 itemprop="about">CMS – Content Management System</h2>
+                <p>CMS brukes til å bygge, organisere og redigere innhold på en nettside eller til en programvare. Når
+                    man bruker en form for
+                    CMS, så er ofte grunnen at man ønsker en god struktur og vedlikehold.
+                </p>
+                <p>CMS baserer seg på databaser, og er derfor en veldig fleksibel løsning. Ved bruk av databaser, så vil
+                    innholdet bli mer dynamisk. Hvordan innholdet fremstilles i nettsiden vil basere seg på dataen som
+                    ligger i databasen. Databaser linkes opp mot backend-utvikling, men ikke alle CMS løsninger krever
+                    at du har backend kunnskaper.</p>
+                <a href="https://www.leadify.no/info/hva-er-cms-content-management-system">Link til hvor jeg har lest
+                    meg opp om CMS:</a>
+                <h2 itemprop="about">Seamless CMS (Tradisjonelt CMS)</h2>
+                <p>I denne CMS løsningen, så benyttes databaser. Her vil du ikke trenge å kunne skrive noe backend kode.
+                    Det brukes en predefinert database som tar hånd om funksjonaliteten som skjer bak kulissene. </p>
+                <p>Dette er en veldig enkel CMS, og mennesker som ikke kan skrive kode, men som vil opprette en
+                    nettbutikk eller lignende kan benytte seg av denne løsningen for å opprette en dynamisk nettside.
+                    Frontend utviklingen er det eneste som behøves, men det finnes mye templater som også kan brukes for
+                    å gjøre jobben enda mindre tidskrevende.</p>
+                <p>Denne type CMS har websider som hovedfokus, og er ikke særlig vennelig når du skal bruke innholdet på
+                    andre platformer enn
+                    nettsider. Det kan oppstå problemer ved å bruke en seamless CMS på andre typer software eller
+                    mobilenheter.
+                </p>
+                <a
+                    href="https://www.contentful.com/r/knowledgebase/what-is-headless-cms/?utm_source=google&utm_medium=search-paid&utm_campaign=GO_TOP_ENG_NB_Signup_CMS-Headless_Exact&utm_content=&utm_term=headless%20cms&gclid=Cj0KCQjwkt6aBhDKARIsAAyeLJ1UCfFs9_fnWsWQroDiIPNhRG1JxLiuoe0fMbfYAUccvS5kspSn42AaAmW_EALw_wcB">link
+                    til hvor jeg har lest meg opp om seamless CMS:</a>
+                <h2 itemprop="about">Headless CMS</h2>
+                <p>Dette er en mer avansert CMS løsning. En stor forskjell som gjør dette til en enda mer krevende
+                    løsning er at du har mer ansvar for databasen selv. Backend kunnskaper er også påkrevd for å kunne
+                    drive databasesystemet.</p>
+                <p>Med denne løsningen, så står man også mer fritt til å bruke det kodespråket du vil. Du kan bruke
+                    passende kodespråk til databasesystemet ditt, og et annet til frontend delen av nettsiden.</p>
+                <p>Denne CMS løsningen gir mer fleksibel bruk, og kan brukes til større og mer komplekse databaser.</p>
+                <a
+                    href="https://www.contentful.com/r/knowledgebase/what-is-headless-cms/?utm_source=google&utm_medium=search-paid&utm_campaign=GO_TOP_ENG_NB_Signup_CMS-Headless_Exact&utm_content=&utm_term=headless%20cms&gclid=Cj0KCQjwkt6aBhDKARIsAAyeLJ1UCfFs9_fnWsWQroDiIPNhRG1JxLiuoe0fMbfYAUccvS5kspSn42AaAmW_EALw_wcB">link
+                    til hvor jeg har lest meg opp om headless CMS:</a>
+                <!-- Denne linken brukte jeg også til å hente litt informasjon om tradisjonelt CMS. -->
+
+
+                <h2 itemprop="about">Seamless CMS vs Headless CMS</h2>
+                <p>En stor forskjell er at headless CMS er begernet for større nettsider. Headless CMS er
+                    også betraklelig mer avansert å bruke enn seamless CMS. Den tradisjonelle seamless CMS, skal være
+                    mer brukervennelig, og skal til og med kunne brukes av mennesker uten særlig
+                    programmering-kunnskaper.</p>
+                <p>En fordel og ulempe med seamless CMS opp imot headless CMS er at seamless CMS er ganske predefinert i
+                    form av at det er mye ferdige templates som du kan bruke. Ikke bare det, men databasesystemet er
+                    lite vennelig når det gjelder modifisering. Hvis vi ser på headless CMS så er det en løsning som lar
+                    deg eksprimentere ganske fritt med databasesystemet. Her er du nødt til å ha backend-kunnskaper.</p>
+                <p>En av de største forskjellene som gir headless CMS en stor fordel er at du kan ha bedre responsivt
+                    design tilpasset flere forskjellige enheter. I det tradisjonelle CMS, så er denne type tilpassning
+                    mer begrenset. Spesielt opp imot universell utforming, så er dette veldig bra i headless CMS.</p>
+
+
+                <h2 itemprop="about">CMS Systemer</h2>
+                <p>Det finnes en rekke forskjellige CMS systemer. Noen av de mest kjente er Wordpress. Dette er open
+                    source. Wordpress er en variant av CMS som kalles WCMS (Web Content Management System). Dette er et
+                    seamless CMS system, og på et slikt system, så har man opprettet noen admin-brukere som har flere
+                    funksjoner enn en vanlig bruker. I wordpress kan du for eksempel lagre data om forskjellige brukere,
+                    eller administrere innhold som brukere har publisert. Wordpress er veldig enkelt for deg som ikke
+                    har så mye erfaring med CMS.</p>
+
+                <p>Et annet kjent system er Dropbox. Dette er av typen DMS (Document Management System). Et slikt
+                    system pleier å være en del av et annet system. En primæroppgave med et slikt system er å kunne
+                    lagre filer trygt og velge ut personer du ønsker skal ha tilgang til filene. Dropbox fungerer også
+                    som en type versjonskontroll, der man kan se endringer gjort i tidligere faser av filene.</p>
+
+                <p>Joomla er et kjent CMS. Det går under katagorien WCMS (Web Content Management System). Denne
+                    CMS-tjenesten tilbyr innloggin, avanserte søk, og enkel oppretting av nettsider. Et av hovedfokusene
+                    til Joomla
+                    er at brukere har enorm tilgang på tredjeparts prulgins. Mange utviklere har laget
+                    tileggsprogramvare som du ekelt kan benytte deg av. Avhengig av hva slags nettside du skal lage, så
+                    kan du enkelt laste ned plugins som passer til akkurat slik nettside du ønsker å opprette.</p>
+                <p>
+                    <a href="https://techblog.sdstudio.top/no/fordeler-og-ulemper-med-wordpress/">Link til hvor jeg
+                        leste
+                        meg opp om wordpress:</a>
+                </p>
+                <p>
+                    <a href="https://zapier.com/blog/dropbox-vs-google-drive/">Link til hvor jeg leste meg opp om
+                        dropbox:</a>
+                </p>
+                <p>
+                    <a href="https://en.wikipedia.org/wiki/Document_management_system">Link til hvor jeg leste meg opp
+                        om
+                        DMS:</a>
+                </p>
+
+                <p> <a href="https://no.wikipedia.org/wiki/Joomla!">Link til hvor jeg har lest meg opp om joomla:</a>
+                </p>
+                <p>
+                    <a href="https://www.hvordan.org/kategorier/11-teknologi-og-internett/47-hva-er-joomla">Link til
+                        hvor jeg har lest meg opp om joomla:</a>
+                </p>
+
+                <!-- Samme linker til det jeg har linket til i artikkelen ligger som kommentarer under: -->
+
+
+                <!-- Link til DMS informasjon jeg har brukt: -->
+                <!-- https://en.wikipedia.org/wiki/Document_management_system -->
+
+                <!-- Jeg har brukt notater i kladdebok fra forelesning om CMS -->
+
+                <!-- Jeg har lest denne artikkelen for å kunne forstå mer om CMS. Jeg har brukt kunnskap jeg har lært fra linken under for å kunne skrive artikkel. -->
+                <!-- https://www.leadify.no/info/hva-er-cms-content-management-system -->
+
+                <!-- Linken under har jeg lest og fått kunnskap om Joomla. -->
+                <!-- https://no.wikipedia.org/wiki/Joomla!-->
+
+                <!-- Linken under har jeg lest og fått kunnskap om Joomla. -->
+                <!-- https://www.hvordan.org/kategorier/11-teknologi-og-internett/47-hva-er-joomla -->
+
+                <!-- Linken under har jeg lest og fått kunnskap om Wordpress. -->
+                <!-- https://techblog.sdstudio.top/no/fordeler-og-ulemper-med-wordpress/ -->
+
+                <!-- Jeg har lest artikkelen i linken under for å lære meg mer om dropbox. -->
+                <!-- https://zapier.com/blog/dropbox-vs-google-drive/ -->
+
+                <h3 id="table-header">Tabell for fordeler, ulemper og likheter/ulikheter for ulike CMS systemer:</h3>
+
+            </section>
+            <!-- Tabell -->
+            <div id="table-container-cms">
+                <div class="table-area-blank-cms"></div>
+
+                <div class="table-area-fordeler-cms">
+                    <h3>Fordeler</h3>
+                </div>
+
+                <div class="table-area-ulemper-cms">
+                    <h3>Ulemper</h3>
+                </div>
+
+                <div class="table-area-likheter-ulikheter-cms">
+                    <h3>Likheter/
+                    </h3>
+                    <h3>Ulikheter</h3>
+                </div>
+
+
+                <!-- Wordpress -->
+                <div class="table-area-cms1">
+                    <h3>Wordpress</h3>
+                </div>
+
+                <div class="table-area-cms1-fordeler">
+                    <ul>
+                        <li>Enkel funksjonalitet.</li>
+                        <li>Gratis.</li>
+                        <li>Lett å få hjelp dersom problemer oppstår.</li>
+                        <li>Mest Brukte CMS i verden.</li>
+                    </ul>
+                </div>
+
+                <div class="table-area-cms1-ulemper">
+                    <ul>
+                        <li>Begrenset dersom funksjonalitet blir mer kompleks.</li>
+                        <li>Plugins holder seg ikke like godt oppdatert med nyeste versjon av wordpress.</li>
+                        <li>Ikke den beste sikkerheten.</li>
+                    </ul>
+                </div>
+
+                <div class="table-area-cms1-likheter-ulikheter">
+                    <!-- <h5>Wordpress - Likheter og ulikheter</h5> -->
+                    <ul>
+                        <li>Likheter ved andre CMS og wordpress er at mange CMS systemer har likt oppsett.</li>
+                        <li>Ulikheter er at CMS er det største CMS systemet, og i tillegg benytter open source kode.
+                            Dette fører til svekket sikkerhet og nettsider kan utsettes for hacke-angrep.</li>
+                    </ul>
+                </div>
+
+
+                <!-- Dropbox-->
+                <div class="table-area-cms2">
+                    <h3>Dropbox</h3>
+                </div>
+
+                <div class="table-area-cms2-fordeler">
+                    <ul>
+                        <li>
+                            Enkel funksjonalitet.
+                        </li>
+                        <li>God skylagring</li>
+                        <li>Enkelt å dele filer.</li>
+                        <li>Trygt.</li>
+                        <li>Kjent platform.</li>
+                    </ul>
+                </div>
+
+                <div class="table-area-cms2-ulemper">
+                    <ul>
+                        <li>Begrenset lagringsplass.</li>
+                        <li>Betaling hvis økt lagringsplass ønskes.</li>
+                        <li>Finnes mange konkurenter.</li>
+                    </ul>
+                </div>
+
+                <div class="table-area-cms2-likheter-ulikheter">
+                    <!-- <h5>Dropbox - Likheter og Ulikheter:</h5> -->
+                    <ul>
+                        <li>Dropbox er ganske likt andre skylagring-tjenester.</li>
+                        <li>En ting som gjør Dropbox ulikt fra andre tjenester er at hvis du skal endre filer så må du
+                            laste ned filen først. Andre sky-tjenester gir deg tilgang til å
+                            endre filer online.</li>
+                    </ul>
+                </div>
+
+
+
+                <!-- Joomla -->
+                <div class="table-area-cms3">
+                    <h3>Joomla</h3>
+                </div>
+
+                <div class="table-area-cms3-fordeler">
+                    <ul>
+                        <li>Enkel funksjonalitet.</li>
+                        <li>
+                            Masse plugins.
+                        </li>
+                        <li>Utallige templates å velge mellom.</li>
+                        <li>Lett å tilpasse til din bruk.</li>
+                    </ul>
+                </div>
+
+                <div class="table-area-cms3-ulemper">
+                    <ul>
+                        <li>Litt vanskelig å komme sette seg inn i systemet.</li>
+                        <li>Kan føles "tregt" til tider.</li>
+                    </ul>
+                </div>
+
+                <div class="table-area-cms3-likheter-ulikheter">
+                    <!-- <h5>Joomla - Likheter og Ulikheter:</h5> -->
+                    <ul>
+                        <li>Veldig likt mange andre CMS systemer i oppsett og hvordan lage nettsider.</li>
+                        <li>Ulikt i form at Joomla primært fokuserer på god funksjonalitet ved veldig store nettsider.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </main>
+
+
+        <footer>
+            <div>
+                <div id="footer-kontakt-info">
+                    <h3>Min kontaktinformasjon:</h3>
+                    <p>Navn: Fredrik Kristiansen</p>
+                    <p>Mail: fjkri@hotmail.com</p>
+                    <p>Telefon: +47 976 67 967</p>
+                </div>
+                <div id="ringe-tider">
+                    <p>Våre ringetider er:</p>
+                    <p>08:00 - 15:00, Mandag - Fredag</p>
+                </div>
+
+                <!-- Facebook knapp -->
+                <div class="fb-share-button" data-href="https://www.your-domain.com/your-page.html"
+                    data-layout="button_count">
+                </div>
+                <!-- SLutt på facebook knapp -->
+                <a href="#" class="fa fa-twitter"> Twitter</a>
+                <a href="#" class="fa fa-pinterest"> Pinterest</a>
+            </div>
+        </footer>
+        <script src="javascript/ham.js"></script>
+    </div>
+    <!-- Facebook share knapp -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0"
+        nonce="L8aR15TL"></script>
+    <!-- Slutt på facebook share knapp -->
+</body>
+
+
+</html>

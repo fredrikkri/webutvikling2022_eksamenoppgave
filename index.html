@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta data for sosiale medier deling -->
+    <meta property="og:image" content="images/webp_images/books.webp">
+    <meta property="og:url" content="https://itstud.hiof.no/~fredrik/deleksamen4/index.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Deleksamen 4">
+    <meta property="og:description" content="Dette er min eksamen oppgave.">
+    <!-- slutt på deling sosiela medier -->
+
+
+    <!-- Twitter sosialt medie integrasjon -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@fredrik_kr">
+    <meta name="twitter:title" content="Deleksamen4">
+    <meta name="twitter:description" content="Min eksamen oppgave.">
+    <meta name="twitter:image" content="images/webp_images/books.webp">
+    <meta name="twitter:image:alt" content="Bilde for hovedside på deleksamen 4">
+    <!-- SLutt på twitter -->
+
+
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="font/css/fontawesome.css" rel="stylesheet">
+    <link href="font/css/brands.css" rel="stylesheet">
+    <link href="font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Deleksamen 4 - Den siste innleveringen i emnet</title>
+    <link rel="icon" type="images/x-icon" href="images/favicon.ico">
+    <!-- fav icon er designet selv på: https://www.favicon.cc/ -->
+
+    <!-- Dele-knapper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Slutt på dele knapper -->
+
+    <!-- Metadata -->
+    <meta name="description"
+        content="Hjemmeside for min eksamensoppgave. Her har du enkel navigasjon til de forskjellige innholdsidene.">
+    <!-- Slutt på metadata -->
+</head>
+
+<body>
+    <div id="index-container">
+        <!-- Dette er header-seksjonen som inneholder hovedmenyen og Logo. -->
+        <header>
+            <nav>
+                <!-- Dette er Logo-en. Som også fungerer som en hjem-knapp. -->
+                <a href="index.html" id="logo-header-navbar">
+                    <img src="./images/webp_images/baseball_logo.webp" alt="Logo for my webpage">
+                </a>
+
+                <!-- Her har du javascript kode som hjelper oss med funksjonalitet med hamburgerbar ved nedskalering av nettsiden. -->
+                <!-- Javascript kode i denne deleksamen er hentet fra forelesning grunnet at det ikke er pensum og at jeg har fått beskjed
+                i fårelesning om at det er greit å bruke det. -->
+                <a style="color: white;" href="javascript:void(0)" id="ham-icon" onclick="hamMenu()">
+                    <i class="fa-solid fa-water"></i> Meny</a>
+
+                <!-- Dette er lista med menypunktene. Du kan navigere deg fra side til side ved å trykke på dem. -->
+                <ul id="meny" style="display:block">
+                    <li><a class="current-site" href="index.html">Hjem</a></li>
+                    <li><a href="uu_vs_ceo.html">UU vs SEO</a></li>
+                    <li><a href="cms.html">CMS</a></li>
+                    <li><a href="analyse.html">Analyse</a></li>
+                    <li><a href="kontakt_oss.html">Kontakt oss</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- Denne header-seksjonen inneholder hovedoverskriften vår (h1-tagg) og bakgrundsbilde. -->
+        <header id="header-h1">
+            <div id="transparent-box">
+                <h1>Deleksamen 4</h1>
+            </div>
+        </header>
+
+
+        <!-- Dette er main-seksjonen. Her er alle artikkelkortene. -->
+        <main id="colum-sort-index">
+            <!-- Jeg har gått for layout-design nr 4 for atrikkelkortene. -->
+            <!-- Her er det største artikkelkortet -->
+            <article id="artikkelkort-1">
+                <div>
+                    <img src="images/webp_images/books.webp" alt="Informasjon">
+                    <!-- link til bilde: https://magoosh.com/hs/files/2017/06/shutterstock_276178202.jpg -->
+                    <h2 id="h2-index">Informasjon</h2>
+                </div>
+                <p>Hvis du vil komme i kontakt, så finner du kontaktinformasjonen min nederst på siden.</p>
+                <p>Er du missfornøyd med din opplevelse på nettsiden, så kan du vennligst ta kontakt med Høyskolen i
+                    Østfold. Kontaktinformasjon og adresse finner du her.</p>
+                <a href="kontakt_oss.html" class="kontakt-oss-knapp">Kontakt oss</a>
+            </article>
+
+            <!-- Her er de 3 mindre artikkelkortene -->
+            <div id="flex-reverse-box">
+                <article id="artikkelkort-2">
+                    <div>
+                        <img src="images/webp_images/ceo.webp" alt="UU vs SEO">
+                        <!-- Link til bilde: 
+                            https://www.incimages.com/uploaded_files/image/1920x1080/getty_200247304-001_9709679704500489_48787.jpg -->
+                        <h3>UU vs SEO</h3>
+                    </div>
+                    <p>UU handler om at vi skal ha like muligheter og
+                        like forutsetninger. Ved SEO, så ønsker man god tilgjengelighet.</p>
+                    <a class="linker-index" href="uu_vs_ceo.html">Trykk her for mer info</a>
+                </article>
+                <article id="artikkelkort-3">
+                    <div><img src="images/webp_images/cms.webp" alt="CMS">
+                        <!-- Link til bilde: https://www.dikom.no/hs-fs/hubfs/CMS-blogg-banner.jpg?width=1673&name=CMS-blogg-banner.jpg -->
+                        <h3>CMS</h3>
+                    </div>
+                    <p>CMS står for Content Management System. Det finnes en rekke slike systemer.</p>
+                    <a class="linker-index" href="cms.html">Les om CMS systemer</a>
+                </article>
+                <article id="artikkelkort-4">
+                    <div><img src="images/webp_images/analyse.webp" alt="Analyse">
+                        <!-- Link til bilde: https://api.ndla.no/image-api/raw/tc34b31e.jpg?width=1760 -->
+                        <h3>Analyse</h3>
+                    </div>
+                    <p>
+                        I analysen av nettsiden min, så har jeg brukt webaim, lighthouse og validator som verktøy for
+                        analyse.</p>
+                    <a class="linker-index" href="analyse.html">Se fullstendig analyse</a>
+                </article>
+            </div>
+        </main>
+
+        <!-- Dette er footer seksjonen. -->
+        <footer>
+            <div>
+                <div id="footer-kontakt-info">
+                    <h3>Min kontaktinformasjon:</h3>
+                    <p>Navn: Fredrik Kristiansen</p>
+                    <p>Mail: fjkri@hotmail.com</p>
+                    <p>Telefon: +47 976 67 967</p>
+                </div>
+                <div id="ringe-tider">
+                    <p>Våre ringetider er:</p>
+                    <p>08:00 - 15:00, Mandag - Fredag</p>
+                </div>
+
+                <!-- Facebook knapp -->
+                <div class="fb-share-button" data-href="https://www.your-domain.com/your-page.html"
+                    data-layout="button_count">
+                </div>
+                <!-- SLutt på facebook knapp -->
+                <a href="#" class="fa fa-twitter"> Twitter</a>
+                <a href="#" class="fa fa-pinterest"> Pinterest</a>
+            </div>
+        </footer>
+
+
+
+    </div>
+    <script src="javascript/ham.js"></script>
+    <!-- Dette er en kodelinje så jeg kan bruke javascript i filen. -->
+    <!-- Facebook share knapp -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0"
+        nonce="L8aR15TL"></script>
+    <!-- Slutt på facebook share knapp -->
+</body>
+
+
+</html>
+
+<!-- Det er elementer som jeg har valgt å ikke kommentere på, som er likt i innholdssidene som jeg har gjort i index.html. -->

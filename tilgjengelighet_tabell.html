@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta data for sosiale medier deling -->
+    <meta property="og:image" content="images/webp_images/books.webp">
+    <meta property="og:url" content="https://itstud.hiof.no/~fredrik/deleksamen4/tilgjengelighet_tabell.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Tilgjengelighetstabell">
+    <meta property="og:description" content="tilgjengelighetstabell med A, AA og AAA krav.">
+    <!-- slutt på deling sosiela medier -->
+
+    <!-- Twitter sosialt medie integrasjon -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@fredrik_kr">
+    <meta name="twitter:title" content="Tilgjengelighetstabell">
+    <meta name="twitter:description" content="Tilgjengelighetstabell med A, AA og AAA krav.">
+    <meta name="twitter:image" content="images/webp_images/books.webp">
+    <meta name="twitter:image:alt" content="Bilde for tilgjengelighetstabell på deleksamen 4">
+    <!-- SLutt på twitter -->
+
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="font/css/fontawesome.css" rel="stylesheet">
+    <link href="font/css/brands.css" rel="stylesheet">
+    <link href="font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Tilgjengelighetserklæring</title>
+    <link rel="icon" type="images/x-icon" href="images/favicon.ico">
+    <!-- fav icon er designet selv på: https://www.favicon.cc/ -->
+
+    <!-- Dele-knapper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Slutt på dele knapper -->
+
+    <!-- Metadata -->
+    <meta name="description"
+        content="Et excel dokument for A, AA, og AAA krav i tilgjengelighetserklæring. Punktene blir fremstilt i en tabell.">
+    <!-- Slutt på metadata -->
+</head>
+
+<body>
+    <div id="innhold-side-container">
+        <header>
+            <nav>
+                <a href="index.html" id="logo-header-navbar">
+                    <img src="./images/webp_images/baseball_logo.webp" alt="Logo for my webpage">
+                </a>
+                <!-- alt av javascript er brukt til hamburgermeny, og er hentet fra forelesning. -->
+                <a style="color: white;" href="javascript:void(0)" id="ham-icon" onclick="hamMenu()"><i
+                        class="fa-solid fa-water"></i>
+                    Meny</a>
+                <ul id="meny" style="display:block">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="uu_vs_ceo.html">UU vs SEO</a></li>
+                    <li><a href="cms.html">CMS</a></li>
+                    <li><a href="analyse.html">Analyse</a></li>
+                    <li><a href="kontakt_oss.html">Kontakt oss</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- Main seksjonen -->
+        <main id="focus-article-container-tilgjenglighets">
+            <h1 style="margin-bottom: 50px; margin-top: 30px;">Tabell for tilgjengelighetserklæring:</h1>
+            <div style="width: 100%; height: 800px; margin-bottom: 40px;">
+                <embed style="width: 100%; height: 800px;" src="excel-tabell-landscape.pdf" type="application/pdf">
+                <!-- For å lære meg å legge inn pdf i html, så fulgte jeg denne videoen: -->
+                <!-- https://www.youtube.com/watch?v=b5Vdy4_xWVU -->
+            </div>
+            <h2>Referanser til krav jeg har fulgt:</h2>
+            <p>
+                <a href="https://www.uutilsynet.no/wcag-standarden/wcag-20-standarden/86">Link til
+                    hvor jeg har lest meg opp om krav for WCAG 2.0-standarden:</a>
+            </p>
+            <p>
+                <a
+                    href="https://www.uutilsynet.no/regelverk/testprosedyrar-nettstader/709#tolking_av_wcag_20_a_og_aa_med_testprosedyrar">Link
+                    til
+                    hvor jeg har lest meg opp om krav for testprosedyrer:</a>
+            </p>
+            <p><a
+                    href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0&showtechniques=321&fbclid=IwAR2hJLaikV78XsLS6jy5u6j19Tw6M431D-3RF6eR3PIUy60dLVSrIS0c9SE#principle1">Link
+                    til hvor jeg fant AAA-krav:</a>
+            </p>
+        </main>
+
+
+        <footer>
+            <div>
+                <div id="footer-kontakt-info">
+                    <h3>Min kontaktinformasjon:</h3>
+                    <p>Navn: Fredrik Kristiansen</p>
+                    <p>Mail: fjkri@hotmail.com</p>
+                    <p>Telefon: +47 976 67 967</p>
+                </div>
+                <div id="ringe-tider">
+                    <p>Våre ringetider er:</p>
+                    <p>08:00 - 15:00, Mandag - Fredag</p>
+                </div>
+
+                <!-- Facebook knapp -->
+                <div class="fb-share-button" data-href="https://www.your-domain.com/your-page.html"
+                    data-layout="button_count">
+                </div>
+                <!-- SLutt på facebook knapp -->
+                <a href="#" class="fa fa-twitter"> Twitter</a>
+                <a href="#" class="fa fa-pinterest"> Pinterest</a>
+            </div>
+        </footer>
+        <script src="javascript/ham.js"></script>
+    </div>
+    <!-- Facebook share knapp -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0"
+        nonce="L8aR15TL"></script>
+    <!-- Slutt på facebook share knapp -->
+</body>
+
+
+</html>
