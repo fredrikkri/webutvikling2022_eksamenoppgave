@@ -1,0 +1,1255 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+ /* for å refferere til google-fonten:
+ font-family: 'Open Sans', sans-serif; */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(152, 193, 189));
+    /* zoom: 70% */
+    /* Jeg har brukt 70% zoom ved nedskalering i de forskjellige mobilenhetene i inspect modus på google chrome */
+    /* Av en eller annen grunn så ble hamburger menyen litt rar da, men hvis jeg nedskalerer ved å bare minske google chrome
+    siden på vanlig måte, så fungerer siden som den skal. */
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+/* Grid layout av mobilnettsiden */
+#index-container {
+    grid-template-areas:    "header" 
+                            "header-h1"
+                            "main"
+                            "footer";
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto;
+}
+#innhold-side-container {
+    grid-template-areas:    "header" 
+                            "main"
+                            "footer";
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto;
+}
+/* Jeg laget grid layout for forside og innholdsside.*/
+/* Eneste forskjellen mellom gridlayoutene er at header-h1 seksjonen er tatt vekk på innholdssidene. */
+
+
+/* ---------------------------------------------------------------------------------------------- */
+/* Start på css design av mobil-innholdet av nettsiden.*/
+
+/* header css seksjon. */
+header {
+    grid-area: header;
+}
+#logo-header-navbar img {
+    max-height: 65px;
+    /* Jeg har satt en maks høyde på logo, slik at den aldri skal vokse utover den satte verdien. */
+    border: solid;
+    border-color: #d9d9d9;
+    /* border gir oss en ramme rundt logo så den ser litt finere ut. */
+}
+header nav {
+    /* Navigasjons-menyen har flex som display. */
+    display: flex;
+    /* background-image: linear-gradient(rgb(32, 195, 227), rgb(178, 251, 253)); */
+    background-color: rgb(2, 85, 158);
+    /* Jeg fant ut at jeg ville prøve å bytte bakgrundsfarge til linear gradient type, her er linken til hvor jeg lærte det fra: */
+    /* https://www.youtube.com/watch?v=4kWHW7da4U8 */
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+    padding: 1rem 2rem;
+}
+header nav a {
+    text-decoration: none;
+    color:#000;
+    /* farge til hamburger-icon */
+}
+
+/* For inspirasjon til nye farger så har jeg hentet inspirasjonen herifra: */
+/* https://webflow.com/blog/best-color-combinations */
+
+
+#meny {
+    position: absolute;
+    width: 100vw;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 125px;
+    padding: 12px;
+    left:0;
+    top:85px;
+    background-color:rgb(2, 85, 158);
+}
+#meny li {
+    list-style: none;
+    /* Dette fjerner uønskede listpunkter i menyen. */
+}
+#meny li a {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+}
+#meny li a:hover {
+    color: rgb(249, 223, 210);
+    transition: 0.9s;
+    text-decoration: underline;
+    /* Her bestemmer jeg at når vi "hover" over menypunktene, så vil nevnte farge vises. */
+}
+#meny li .current-site {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: rgb(237, 163, 125);
+    text-decoration: underline;
+}
+#meny li .current-site:hover {
+    color: rgb(253, 213, 193);
+    transition: 0.9s;
+    
+}
+/* ---------------------------------------------------------------------------------------------- */
+/* header-h1 css seksjon. */
+
+#header-h1 {
+    width: auto;
+    height: 22rem;
+    border-radius: 0 0 1600px 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: header-h1;
+    box-shadow: inset 0 0 0 1000px rgba(7, 69, 127, 0.3);
+
+    /* background-image: url('../images/webp_images/new-blue.webp'); */
+    /* background-image: url('../images/webp_images/best-blue.webp'); */
+    background-image: url('../images/webp_images/siste-blue.webp');
+
+    /* Link til bakgrundsbilde. */
+    /* https://c4.wallpaperflare.com/wallpaper/332/437/173/5bd412f5c6e42-wallpaper-preview.jpg */
+    
+
+    /* background-size: 2500px; */
+    
+   
+    /* link til bilde: */
+    /* https://images.alphacoders.com/115/1153879.jpg */
+}
+#header-h1 h1 {
+    /* Jeg designer h1-overskriften. */
+    text-align: left;
+    align-items: center;
+    margin: 3rem;
+    padding-top: 30px;
+    /* font-size: 2.5rem; */
+    font-weight: bold;
+    text-shadow: 2px 2px #c5c5c5;
+    color: rgb(255, 255, 255);
+}
+#transparent-box {
+    /* Dette er nesten usynelig box som omfavner h1-overskrift. */
+    /* Hensikten er at h1 skal bli mer tydelig, og også av designmessig årsak. */
+    margin-left: 20px;
+    margin-right: 100px;
+    background-color: rgba(245, 245, 245, 0.4);
+    max-width: 675px;
+    height: 200px;
+    border-radius: 15rem 25rem 1600px 600px;
+}
+#h2-index {
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+/* ---------------------------------------------------------------------------------------------- */
+/* main css seksjon. */
+
+#colum-sort-index {
+    /* Dette er main som inneholder artikkelkortene */
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 60px;
+    margin: 3.5rem;
+}
+#colum-sort-index article {
+    flex-grow: 1;
+    flex-basis: 150px;
+    align-items: end;
+    /* Jeg har satt verdi på flex-basis i artiklene på 150px for å få best mulig flyt ved nedskalering. */
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+#colum-sort-index .article-content {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(190, 242, 255));
+    border: none;
+    /* Av designmessig grunnlag, så fjerner jeg border og background-color fra artiklene på innholdssidene. */
+}
+.article-content img {
+    width: 320px;
+    border-radius: 5%;
+    /* Bildene på innholdssidene får en maks størrelse slik at det ikke vil se uryddig og stygt ut på nettsiden. */
+}
+#focus-article-container {
+    grid-area: main;
+    margin: 10px 10px;
+    /* Små design justeringer på main området som er på innholdssidene. */
+}
+#focus-article-container-tilgjenglighets {
+    grid-area: main;
+    margin: 10px 1rem;
+    text-align: -webkit-center;
+    /* Små design justeringer på main området som er på innholdssidene. */
+}
+#focus-article-container-kontakt {
+    grid-area: main;
+    margin: 10px 1rem;
+    text-align: -webkit-center;
+    /* Små design justeringer på main området som er på innholdssidene. */
+}
+#colum-sort-index article div {
+    border-radius: 60px 20px;
+    width: 100%;
+    max-width:300px;
+    margin: 5px;
+    /* Jeg har satt samme verdi her som på img inne på artikkelkortet, dette er slik at 
+    den designa boksen som inneholder både img og h3 skal vokse likt med img ved skalering. */
+    background-color: hsl(0, 0%, 91%);
+}
+#colum-sort-index article h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 1rem 2px;
+}
+#colum-sort-index article p {
+    padding: 0.5rem;
+}
+#colum-sort-index article a {
+    /* margin: 20px 0; */
+    padding: 1rem;
+    flex: none;
+}
+
+#artikkelkort-2  {
+    background-color: #dddfe3;
+    border: 1px solid #c1c1c1;
+}
+#artikkelkort-3 {
+    background-color: #dddfe3;
+    border: 1px solid #c1c1c1;
+}
+#artikkelkort-4 {
+    background-color: #dddfe3;
+    border: 1px solid #c1c1c1;
+}
+
+article img {
+    width: 100%;
+    max-width:300px;
+    border-radius: 5% 5% 40% 20%;
+    /* Jeg bestemmer bilde størrelse inne på innholdsidene. */
+}
+h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+#table-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    background-image: linear-gradient(rgb(146, 149, 150), rgb(139, 161, 164));
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#table-container h3 {
+    text-align: center;
+}
+#table-container-cms h3 {
+    text-align: center;
+}
+#table-container .table-area-blank {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-end: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(235, 11, 11, 0.9,0.0);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container .table-area-fordeler {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(187, 187, 187);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container .table-area-ulemper {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(187, 187, 187);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container .table-area-likheter-ulikheter {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(187, 187, 187);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container .table-area-uu {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(162, 221, 255);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container .table-area-seo {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(177, 227, 218);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container .table-area-uu-likheter-ulikheter {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 9;
+    grid-row-end: 11;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(162, 221, 255);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container .table-area-uu-fordeler {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(162, 221, 255);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container .table-area-seo-fordeler {
+    display: flex;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(177, 227, 218);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container .table-area-uu-ulemper {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(162, 221, 255);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container .table-area-seo-ulemper {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(177, 227, 218);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container .table-area-seo-likheter-ulikheter {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 9;
+    grid-row-end: 12;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(177, 227, 218);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* CMS tabell */
+
+#table-container-cms {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(36, 5rem);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    background-image: linear-gradient(rgb(146, 149, 150), rgb(139, 161, 164));
+    border-radius: 10rem 10px 10px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#table-container-cms .table-area-blank-cms {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 10;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(166, 200, 220, 0.0);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container-cms .table-area-fordeler-cms {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(187, 187, 187);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container-cms .table-area-ulemper-cms {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(187, 187, 187);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container-cms .table-area-likheter-ulikheter-cms {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 10;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(187, 187, 187);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container-cms .table-area-cms1 {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 10;
+    grid-row-end: 19;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(166, 200, 220);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container-cms .table-area-cms1-fordeler {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 10;
+    grid-row-end: 13;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(166, 200, 220);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container-cms .table-area-cms1-ulemper{
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 13;
+    grid-row-end: 16;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(166, 200, 220);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container-cms .table-area-cms1-likheter-ulikheter {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 16;
+    grid-row-end: 19;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(166, 200, 220);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container-cms .table-area-cms2 {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 19;
+    grid-row-end: 28;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(177, 227, 218);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container-cms .table-area-cms2-fordeler {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 19;
+    grid-row-end: 22;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(177, 227, 218);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container-cms .table-area-cms2-ulemper {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 22;
+    grid-row-end: 25;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(177, 227, 218);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container-cms .table-area-cms2-likheter-ulikheter {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 25;
+    grid-row-end: 28;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(177, 227, 218);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container-cms .table-area-cms3 {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 28;
+    grid-row-end: 37;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(185, 208, 153);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container-cms .table-area-cms3-fordeler {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 28;
+    grid-row-end: 31;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(185, 208, 153);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container-cms .table-area-cms3-ulemper{
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 31;
+    grid-row-end: 34;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(185, 208, 153);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#table-container-cms .table-area-cms3-likheter-ulikheter{
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 34;
+    grid-row-end: 37;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(185, 208, 153);
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+
+/* ---------------------------------------------------------------------------------------------- */
+
+/* Innsending av spørsmål skjema på kontakt oss side. */
+
+#send-in-sporsmal {
+    /* margin-left: 75px;
+    margin-right: 45px; */
+    /* Dette er en div container som jeg bruker for design.*/
+    text-align: center;
+    background-color: #e3f2fd;
+    padding: 0px 30px 25px 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 250px;
+    
+}
+
+#send-in-sporsmal form {
+    margin: 10px;
+}
+#send-in-sporsmal form input {
+    max-width: 400px;
+    height: 35px;
+    border: solid grey;
+    border-radius: 5px;
+    margin: 10px 20px;
+    padding: 0px 8px;
+    outline: none;
+}
+#send-in-sporsmal form textarea {
+    max-width: 400px;
+    border: solid grey;
+    border-radius: 5px;
+    margin: 10px 20px;
+    padding-bottom: 35px;
+    padding-right: 10px;
+    outline: none;
+}
+#send-in-sporsmal form button {
+    margin-top: 20px;
+    border: grey;
+    background: rgb(188, 232, 248);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 10px;
+    text-decoration: none;
+}
+#send-in-sporsmal form button:hover {
+    background-color: rgb(168, 214, 246);
+    transition: 0.3s;
+    text-decoration: underline;
+    /* Dette er et "dummy" skjema, og submit knappen vil bare ta deg til samme side som skjemaet er på. */
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* footer css seksjon. */
+
+footer {
+    grid-area: footer;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-bottom: 3rem;
+    border-radius: 100px 600px 0 0;
+    color: rgb(255, 255, 255);
+    border-top: dotted 2px rgb(179, 200, 208, 0.2);
+    background-color: rgb(84, 96, 112);
+}
+#footer-kontakt-info {
+    border-radius: 50px 200px 50px 50px;
+    width: 300px;
+    padding: 1rem;
+    background-color: rgb(115, 115, 115);
+    align-items: center;
+}
+#footer-kontakt-info h3 {
+    color: #f1ffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+
+}
+#ringe-tider {
+    margin-left: 1rem;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------- */
+/* Design av nettsidekomponenter */
+
+.kontakt-oss-knapp {
+    background: rgb(44, 199, 255);
+    color: rgb(0, 0, 0);
+    border: grey;
+    text-decoration: none;
+    border-radius: 30px;
+
+}
+.kontakt-oss-knapp:hover {
+    background-color: rgb(168, 214, 246);
+    transition: 0.2s;
+    text-decoration: underline;
+}
+.flex-screenshots {
+    display: flex;
+    flex-wrap: wrap;
+}
+.screenshot-image {
+   
+    display: block;
+    margin: 0px;
+    /* max-height: 400px; */
+    /* max-width: 500px;  */
+    width: 50px;
+    height: auto;
+    /* flex: 1; */
+    padding: 8px;
+}
+tr td:first-child {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.flex-kart-kontakt {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    justify-content: space-around;
+}
+.google-map {
+    flex: 1;
+    margin: 30px 20px 30px 20px;
+    /* min-width: 340px; */
+    width: 80%;
+    border-radius: 5%;
+}
+.fa-twitter {
+    width: 80px;
+    margin-left: 10px;
+    border-radius: 100px;
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    background: #0574c9;
+    color: white;
+  }
+  .fa-twitter:hover {
+    opacity: 0.7;
+  }
+  .fa-pinterest {
+    width: 80px;
+    margin-left: 10px;
+    border-radius: 100px;
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    background: #d2320a;
+    color: white;
+  }
+  .fa-pinterest:hover {
+    opacity: 0.7;
+  }
+  #margin-knapp {
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+  }
+  #tabell-side {
+    background-color: rgb(153, 214, 255);
+    width: fit-content;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  #tabell-side:hover {
+    background-color: rgb(187, 225, 242);
+    
+  }
+  #tabell-side a {
+    text-decoration: none;
+    color: black;
+  }
+  #tabell-side:hover {
+    transition: 0.2s;
+    text-decoration: underline;
+  }
+  .linker-index {
+    text-decoration: none;
+    background-color: rgb(211, 211, 211);
+    border-radius: 15px;
+  }
+  .linker-index:hover {
+    color: #4c91c6;
+    text-decoration: underline;
+  }
+  #table-header {
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 80px;
+  }
+  .table-div {
+    align-self: center;
+    margin: 10px 20px;
+  }
+ 
+
+  li {
+    font-size: medium;
+  }
+  @media only screen and (max-width: 490px) {
+    li {
+        font-size: small;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* Start på css design av desktop-innholdet av nettsiden.*/
+@media only screen and (min-width: 500px) {
+    #header-h1 h1 {
+        /* Denne koden gjør h1 overskrften mer vennelig når jeg skalerer ned nettsiden. */
+        font-size: 2.5rem;
+        
+    }
+}
+
+@media only screen and (min-width: 975px) {
+    /* Jeg holder min-width som 800px, dette gir en naturlig overgang til hamburgermeny. */
+    /* Navigasjonsbaren gjøres om til hamburgermany når den ikke har mer plass å gå på, i header seksjon. */
+
+    /* ------------------------------------------------------------------------------------------ */
+
+    /* Grid layout av desktopnettsiden */
+    #index-container {
+        grid-template-areas:    "header header header" 
+                                "header-h1 header-h1 header-h1"
+                                "main main main" 
+                                "footer footer footer";
+        grid-template-rows: auto auto 3.5fr auto;
+    }
+    #innhold-side-container {
+        grid-template-areas:    "header header header" 
+                                "main main main" 
+                                "footer footer footer";
+        grid-template-rows: auto 4fr auto;
+    }
+    .google-map {
+        margin: 30px 20px 30px 60px;
+    }
+    .table-div {
+        margin-top: 50px;
+        margin: 10px 45px;
+        align-self: center;
+    }
+  
+
+    /* ------------------------------------------------------------------------------------------ */
+    
+    /* Dette er kode som har med hamburger-bar å gjøre, altså kode som har med javascript å gjøre. */
+    #ham-icon {
+        display: none;
+    }
+    #meny {
+        background-color: transparent;
+        display: block !important;
+        width: fit-content;
+        position: static;
+    } 
+    #meny a {
+        color: rgb(8, 0, 37);
+    }
+    #meny li {
+        margin: 0 1rem;
+        display: inline-block;
+        padding: 1rem 0;
+    }
+
+    /* ------------------------------------------------------------------------------------------ */
+    /* Dette er design av hvordan de tre mindre artikkelkortene på indexsiden skal oppføre seg. */
+    /* Primært er fokuset på de tre små artiklene opp imot det store artikkelkortet. */
+
+    #flex-reverse-box article {
+        flex-wrap: nowrap;
+        display: flex;
+        /* Her har jeg brukt flex og nowrap for å gjøre utseende bedre, og jeg får mer effektiv bruk av plass på nettsiden. */
+        max-width: 40rem;
+        width: auto;
+    }
+    
+}
+@media only screen and (min-width: 805px) {
+    
+    #table-container {
+        border-radius: 10rem 10px 10px 10px;
+        background-color: rgb(147, 167, 176);
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    #table-container .table-area-blank {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-end: 2;
+    }
+    #table-container .table-area-fordeler {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    #table-container .table-area-ulemper {
+        grid-column-start: 5;
+        grid-column-end: 8;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    #table-container .table-area-likheter-ulikheter {
+        grid-column-start: 8;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    #table-container .table-area-uu {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    #table-container .table-area-seo {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+    #table-container .table-area-uu-likheter-ulikheter {
+        grid-column-start: 8;
+        grid-column-end: 11;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    #table-container .table-area-uu-fordeler {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    #table-container .table-area-seo-fordeler {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+    #table-container .table-area-uu-ulemper {
+        grid-column-start: 5;
+        grid-column-end: 8;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    #table-container .table-area-seo-ulemper {
+        grid-column-start: 5;
+        grid-column-end: 8;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+    #table-container .table-area-seo-likheter-ulikheter {
+        grid-column-start: 8;
+        grid-column-end: 11;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+}
+@media only screen and (min-width: 875px) {
+
+    /* ---------------------------------------------------------------------------------------------- */
+    /* CMS tabell */
+
+    #table-container-cms {
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        }
+        #table-container-cms .table-area-blank-cms {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-end: 2;
+        }
+        #table-container-cms .table-area-fordeler-cms {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+        #table-container-cms .table-area-ulemper-cms {
+            grid-column-start: 5;
+            grid-column-end: 8;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+        #table-container-cms .table-area-likheter-ulikheter-cms {
+            grid-column-start: 8;
+            grid-column-end: 11;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+
+        /* CMS 1 */
+        #table-container-cms .table-area-cms1 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        #table-container-cms .table-area-cms1-fordeler {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        #table-container-cms .table-area-cms1-ulemper{
+            grid-column-start: 5;
+            grid-column-end: 8;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        #table-container-cms .table-area-cms1-likheter-ulikheter {
+            grid-column-start: 8;
+            grid-column-end: 11;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        /* CMS 2 */
+        #table-container-cms .table-area-cms2 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 6;
+        }
+        #table-container-cms .table-area-cms2-fordeler {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 6;
+        }
+        #table-container-cms .table-area-cms2-ulemper {
+            grid-column-start: 5;
+            grid-column-end: 8;
+            grid-row-start: 4;
+            grid-row-end: 6;
+        }
+        #table-container-cms .table-area-cms2-likheter-ulikheter {
+            grid-column-start: 8;
+            grid-column-end: 11;
+            grid-row-start: 4;
+            grid-row-end: 6;
+        }
+
+        /* CMS 3 */
+        #table-container-cms .table-area-cms3 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 6;
+            grid-row-end: 8;
+        }
+        #table-container-cms .table-area-cms3-fordeler {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 6;
+            grid-row-end: 8;
+        }
+        #table-container-cms .table-area-cms3-ulemper{
+            grid-column-start: 5;
+            grid-column-end: 8;
+            grid-row-start: 6;
+            grid-row-end: 8;
+        }
+        #table-container-cms .table-area-cms3-likheter-ulikheter{
+            grid-column-start: 8;
+            grid-column-end: 11;
+            grid-row-start: 6;
+            grid-row-end: 8;
+        }
+        
+
+}
+
+@media only screen and (min-width: 900px) {
+    h1 {
+        text-align-last: center ;
+    }
+    .article-content img {
+        /* width: 25%; */
+        display: block;
+        margin: 0px auto;
+    }
+    .flex-screenshots {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .screenshot-image {
+        display: block;
+        margin: 0px;
+        /* max-height: 400px; */
+        /* max-width: 500px;  */
+        width: 50px;
+        height: auto;
+        /* flex: 1; */
+        padding: 8px;
+    }
+    
+}
